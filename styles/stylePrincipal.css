@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'FontomasCustomRegular';
+    src: url('fonts/fontomas-webfont.eot');
+    src: url('fonts/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fontomas-webfont.woff') format('woff'),
+         url('fonts/fontomas-webfont.ttf') format('truetype'),
+         url('fonts/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+	background-color:#E1E6B9;
+	margin:0px;
+	font-family:"Helvetica",Arial;
+	overflow-x:hidden;
+}
+header
+{
+	border-bottom:solid;
+	border-width:1px;
+	padding:5px;
+	padding-left:30px;
+}
+header h1
+{
+	font-size:40px;
+	color:#375D3B;
+	margin:0px;
+}
+header h1,h2
+{
+	display:inline-table;
+	text-align:center;
+}
+header h2
+{
+	font-size:12px;
+	margin:0px;
+	margin-left:35px;
+}
+#principal
+{
+	padding-top:100px;
+	width:800px;
+	margin:0 auto;
+	text-align:center;
+}
+#principal img
+{
+	margin:0 auto;
+	display:block;
+}
+#principal #conLogo, #form
+{
+	display:inline-block;
+	margin-right:20px;
+}
+.btnLogIn
+{
+	padding:5px 15px 5px 15px;
+	border:none;
+	outline:none;
+	margin:5px;
+	background-color:#375D3B;
+	color:#ABC8A4;
+	border-radius:5px;
+	box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+#form
+{
+	text-align:left;
+}
+#form .btnLogIn:hover
+{
+	cursor:pointer;
+	background-color:#183128;
+	box-shadow:2px 2px 2px rgba(0,0,0,0.5);
+}
+#form label
+{
+	display:block;
+}
+#form input[type="text"], #form input[type="password"]
+{
+	font-size:18px;
+	padding-left:30px;
+}
+#form a
+{
+	color:#375D3B;
+	font-weight:bold;
+}
+[data-icon]:after {
+    content: attr(data-icon);
+    font-family: 'FontomasCustomRegular';
+    color: #375D3B;
+    position: relative;
+    left: -80px;
+    top: 25px;
+    width: 30px;
+}
+#footer
+{
+	position: absolute;
+	bottom:0px;
+	background-color:#000;
+	font-size:10px;
+	width:100%;
+	color:#ABC8A4;
+	text-align:center;
+}
+#footer p
+{
+	display:inline-block;
+	margin-right:100px;
+}
+.pantalla
+{
+	background-color:#FFF;
+	width:350px;
+	height:100px;
+	padding:50px;
+	box-shadow:0px 0px 30px rgba(0,0,0,0.9);
+	border-radius:30px;
+	position: absolute;
+	top:25%;
+	left:35%;
+}
+#usuariosCon
+{
+	float:right;
+	width:30%;
+	background-color:#FFF;
+	color:#000;
+}
+#contChat
+{
+	width:60%;
+	float:left;
+	background-color:#FFF;
+}
+#chat
+{
+	height:400px;
+	overflow: scroll;
+}
+#chat p
+{
+	border-bottom:solid;
+	border-width:1px;
+}
+#formMsg
+{
+
+}
+#formMsg input[type='text']
+{
+	width:50%;
+}

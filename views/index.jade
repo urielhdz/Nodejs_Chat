@@ -1,0 +1,34 @@
+doctype 5
+html(lang="es")
+	head
+		title = "Chat by UrielHdz"
+		meta(charset='utf-8')
+		link(href='/styles/stylePrincipal.css',rel='stylesheet')
+		link(href='http://fonts.googleapis.com/css?family=Syncopate:400,700',rel='stylesheet')
+		script(src='/socket.io/socket.io.js')
+		script(src='http://code.jquery.com/jquery-1.7.1.min.js')
+		script(src='scripts/scriptPrincipal.js')
+	body
+		div#body
+			div#ingresaNombre
+				div#setNombre.pantalla
+					form#formNombre.form
+						label(for='name',data-icon='u') Nickname:&nbsp&nbsp&nbsp
+						input(type='text', name='name',id='name',placeholder='Set yout nickname')
+						input(type='submit', value='Enviar', class='btnLogIn', id='setNick')
+			header#encabezado
+				h1 Chat
+			div#contChat
+				div#miChat
+					div#chat
+						div#chatInsite
+				form#formMsg
+					input(type='text', name='msg', id='msg', required)
+					input( type='submit', value='Enviar', class='btnLogIn', id="sendM")
+					buton(id='btnClosSes', class='btnLogIn') Cerrar Sesión
+			div#usuariosCon
+					header
+						h2 Usuarios Conectados
+					div#users
+
+			
