@@ -24,7 +24,7 @@ function iniciar()
 			alert("Ese nombre ya existe");
 	});
 	//Formulario para enviar un nuevo mensaje
-	$("#formMsg").on("submit",function(e){
+	$("#formChat").on("submit",function(e){
 		e.preventDefault();
 		sendMessage();
 	});
@@ -93,8 +93,8 @@ function procesarUsuario(mensaje)
 //Esta función procesa los msjs
 function procesarMensaje(data)
 {
-	$('#chatInsite').append($('<p>').append($('<article>').html('<span>'+ data[0] + " says:</span> " + data[1])));
-	$('#chat').animate({scrollTop: $("#chatInsite").height()}, 800);
+	$('#chatInsite').append($('<p>').append($('<article>').html('<span>'+ data[0] + "</span> " + data[1])));
+	$('#chat').animate({scrollTop: $("#chatInsite").height()}, 300);
 }
 
 function procesarUsuarios(data)
