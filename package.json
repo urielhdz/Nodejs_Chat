@@ -2,7 +2,7 @@
   "name": "chat_dxv",
   "version": "0.0.1",
   "dependencies": {
-    "express": "2.5.x",
+    "express": "x",
     "socket.io": "x",
     "jade": "x"
   },
