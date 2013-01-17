@@ -6,7 +6,7 @@ app.configure(function(){
 	app.use(express.static(__dirname));
 });
 app.get('/',function(req,res){
-	res.render('index.jade',{layout:false});
+	res.send("<h1>Ola ke ase</h1>");
 });
 var port = process.env.PORT || 5000;
 server.listen(port);
