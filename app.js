@@ -8,7 +8,8 @@ app.configure(function(){
 app.get('/',function(req,res){
 	res.render('index.jade',{layout:false});
 });
-server.listen(8080);
+var port = process.env.PORT || 5000;
+server.listen(port);
 
 var io = require("socket.io").listen(server);
 //JSON para controlar que no se repitan nombres
